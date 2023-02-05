@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<style>
+.parent{
+background-color: #eee;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    height: 300px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.parent:hover{
+margin-top: 0;
+transition-duration: 0.5s;
+ 
+}
+.one{
+padding: 15px;
+}
+
+.two{
+    background-color: #d1d1d1;
+    padding: 15px 0;
+    width: 80%;
+    margin: 0px 10%;
+    transition-delay: 0.5s;
+    transition-duration: 1s;
+ transition-property: all;
+}
+
+.two:hover{
+margin: 47px 10%;
+}
+
+
+</style>
+<meta charset="UTF-8" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title></title>
+</head>
+
+<body>
+<div class="parent">
+ <div class="one">Will Go Up On Hover in Half Second</div>
+  <div class="two">Will Go Down After Half Second</div>
+</div>
+</body>
+</html>

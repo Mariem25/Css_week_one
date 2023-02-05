@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+<head>
+
+ <meta charset="UTF-8" />
+<style>
+
+*{
+box-sizing: border-box;
+}
+
+.root{
+--backcolor:#eee;
+--maincolor: #dbdbdb;
+}
+.page{
+    width: 700px;
+    height: 350px;
+    background-color: var(--backcolor,#eee);
+    margin: 0 auto;
+    padding: 12px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header{  
+    width: 100%;
+    height: 12%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+display: flex;
+    background-color: var(--maincolor,#dbdbdb);
+    height: 100%;
+    width: 10%;
+    align-items: center;
+    justify-content: center;
+}
+
+.links{
+display: inline-flex;
+    list-style-type: none;
+    background-color: var(--maincolor,#dbdbdb);
+    height: 100%;
+    width: 88%;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 7px;
+}
+
+ul li{
+margin-right: 11px;
+}
+.main-area{
+    align-self: center;
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content{
+    background-color: var(--maincolor,#dbdbdb);
+    width: 73%;
+    padding: 5px;
+}
+
+.sidebar{
+    background-color: var(--maincolor,#dbdbdb);
+    width: 25%;
+    height: 100%;
+    align-self: flex-end;
+    padding: 5px;
+}
+
+.footer{
+position: relative;
+    background-color: var(--maincolor,#dbdbdb);
+    align-self: flex-end;
+    width: 100%;
+    height: 12%;
+}
+
+.copyright{
+position: absolute;
+    top: 50%;
+    left: 11px;
+    margin-top: -10px;
+}
+
+.design{
+position: absolute;
+    top: 50%;
+    right: 11px;
+    margin-top: -10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+<title></title>
+</head>
+
+<body>
+<div class="page">
+  <div class="header">
+    <div class="logo">Logo</div>
+    <ul class="links">
+      <li>Home</li>
+      <li>About</li>
+      <li>Services</li>
+      <li>Contact</li>
+    </ul>
+  </div>
+  <div class="main-area">
+    <div class="content">Content</div>
+    <div class="sidebar">Sidebar</div>
+  </div>
+  <div class="footer">
+    <div class="copyright">Copyright 2021</div>
+    <div class="design">Designed By Elzero</div>
+  </div>
+</div>
+</body>
+</html>

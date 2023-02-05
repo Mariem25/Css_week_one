@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+
+ <meta charset="UTF-8" />
+<style>
+
+*{
+box-sizing: border-box;
+}
+
+.parent{
+    display: flex;
+    width: 800px;
+    margin: 0 auto;
+    background-color: #eee;
+    height: 300px;
+    flex-wrap: wrap;
+}
+
+.full{
+       width: 100%;
+    background-color: #dbdbdb;
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.two{
+   display: flex;
+    width: calc((100%-60px));
+   
+}
+
+.two div {   
+ background-color: #dbdbdb;
+    width: calc((100%-45px)/2);
+    margin:  0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.three{
+       display: flex;
+    
+    width: 100%;
+   }
+
+.three div{
+    background-color: #dbdbdb;
+    width: calc((100%-60px)/3);
+    margin: 0 15px 15px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.four{
+       display: flex;
+    justify-content: space-around;
+    width: calc((100%-60px));
+   
+}
+
+.four div {
+   background-color: #dbdbdb;
+    width: calc((100%-75px)/4);
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+</style>
+<title></title>
+</head>
+
+<body>
+<div class="parent">
+<div class="full">Fill Width</div>
+
+<div class="three">
+<div class="">1/3</div>
+<div class="">1/3</div>
+<div class="">1/3</div>
+</div>
+
+<div class="two">
+<div class="">1/2</div>
+<div class="">1/2</div>
+</div>
+
+<div class="four">
+<div class="">1/4</div>
+<div class="">1/4</div>
+<div class="">1/4</div>
+<div class="">1/4</div>
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<style>
+div{
+    width: 100px;
+    height: 100px;
+    float: left;
+    background-color: #eee;
+    outline: solid 3px black;
+    margin: 15px;
+border-radius: 50px;
+box-shadow: -9px -8px 0px 0px #f1407c, 10px 9px 0px 0px #499cd8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+position: relative;
+counter-increment: count;
+}
+
+div::before{content: counter(count);
+width: 22px; 
+height: 22px;
+background-color: black;
+border-radius: 11px;
+color: white;
+position: absolute;
+top: -9%;
+left: 39%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+</style>
+<meta charset="UTF-8" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title></title>
+</head>
+
+<body>
+<div>Element</div>
+<div>Element</div>
+<div>Element</div>
+</body>
+</html>

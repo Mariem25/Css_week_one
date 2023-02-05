@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+
+ <meta charset="UTF-8" />
+<style>
+
+*{
+box-sizing: border-box;
+}
+
+.one{
+order: 6;
+    align-self: flex-end;
+}
+
+.two{
+order: 5;
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.three{
+order: 2;
+}
+
+.four{
+align-self: stretch;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    order: 3;
+}
+
+.five{
+order: 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+}
+
+.six{
+    order: 1;
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.parent{
+width: 600px;
+    height: 300px;
+    display: flex;
+    background-color: #eee;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 9px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: self-start;
+    text-align: center;
+}
+
+.parent div{
+color: white;
+    background-color: #496370e3;
+    width: calc(95%/3);
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+</style>
+<title></title>
+</head>
+
+<body>
+<div class="parent">
+  <div class="one">1</div>
+  <div class="two">2</div>
+  <div class="three">3</div>
+  <div class="four">4</div>
+  <div class="five">5</div>
+  <div class="six">6</div>
+</div>
+</body>
+</html>

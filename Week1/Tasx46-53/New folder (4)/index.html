@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+
+ <meta charset="UTF-8" />
+<style>
+
+*{
+box-sizing: border-box;
+}
+
+.parent{
+    background-color: #eee;
+    width: 600px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.parent div{
+color: white;
+    background-color: darkcyan;
+    height: calc(85%/3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.one{
+    align-self: flex-end;
+    width: 5%;
+}
+
+.two{
+width: 53%;
+    align-self: flex-start;
+}
+
+.three{
+    align-self: flex-end;
+    width: 5%;
+}
+
+</style>
+<title></title>
+</head>
+
+<body>
+<div class="parent">
+  <div class="one">1</div>
+  <div class="two">2</div>
+  <div class="three">3</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+<style>
+
+*{
+box-sizing: border-box;
+}
+
+.parent{
+width: 550px;
+margin-left: auto;
+margin-right: auto;
+background-color: white;
+overflow: hidden;
+position: relative;
+}
+
+.one, 
+.two{
+float: left;
+    background-color: #eee;
+    height: 100%;
+    width: 238px;
+    margin: 0 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+position: relative;
+}
+
+.parent::before{
+content: "";
+    height: 100%;
+    width: 2px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -1px;
+    background-color: #68c7f1;
+}
+
+.parent::after{
+content: "Or";
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    top: 30px;
+    left: 266px;
+    background-color: #68c7f1;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border-radius: 50%;
+    top: 50%;
+    margin-top: -12.5px;
+    left: 50%;
+    margin-left: -12.5px;
+}
+.one div,
+.two div{
+background-color: #68c7f1;
+    color: white;
+    padding: 10px;
+    margin: 15px;
+    text-align: center;
+    border-radius: 10px;
+    width: 180px;
+}
+
+.one p,
+.two p{
+   background-color: #dcdcdc;
+    color: black;
+    padding: 10px;
+    margin: 15px;
+    width: 167px;
+    height: 167px;
+    text-align: center;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: 500;
+    font-size: xx-large;
+}
+}
+</style>
+<meta charset="UTF-8" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title></title>
+</head>
+
+<body>
+<div class="parent">
+ <div class="one">
+   <div>Basic</div>
+   <p>Free</p>
+ </div>
+
+ <div class="two">
+   <div>Pro</div>
+   <p>$30</p>
+ </div>
+
+</div>
+</body>
+</html>

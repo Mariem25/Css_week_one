@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+<style>
+
+.main{
+//background-color: #eee;
+width: 400px;
+
+}
+
+.html{
+margin: 15px;
+background-color: #eee;
+list-style: none;
+padding: 10px;
+}
+
+ li{
+margin: 10px;
+background-color: white;
+
+padding: 10px;
+}
+
+.css{
+margin: 15px;
+background-color: #eee;
+list-style: none;
+padding: 10px;
+}
+
+.css ol li{
+list-style-type: upper-roman;
+}
+
+.js{
+margin: 15px;
+background-color: #eee;
+list-style: none;
+padding: 10px;
+}
+
+.js ul li{
+list-style-position: inside; 
+
+}
+</style>
+<meta charset="UTF-8" />
+<title></title>
+</head>
+
+<body>
+<ul class="main">
+  <li class="html">
+    HTML
+    <ol class="one" start="10">
+      <li>Slim</li>
+      <li>Pugjs</li>
+      <li>HAML</li>
+    </ol>
+  </li>
+  <li class="css">
+    CSS
+    <ol start="10">
+      <li>SASS</li>
+      <li>LESS</li>
+      <li>PostCSS</li>
+    </ol>
+  </li>
+  <li class="js">
+    JavaScript
+    <ul>
+      <li>Vuejs</li>
+      <li>Sveltejs</li>
+    </ul>
+  </li>
+</ul>
+</body>
+</html>

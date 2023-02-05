@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<style>
+p{
+background-color: #eee;
+padding: 20px;
+margin-bottom: 10px;
+position: relative;
+margin-left: auto;
+margin-right: auto;
+width: 40%;
+border-left: solid #ff758d 5px;
+
+
+}
+
+p::before{
+content: attr(data-person);
+    position: absolute;
+    left: -103px;
+    background-color: #e9e6e6;
+    height: 50px;
+    top: 50%;
+margin-top: -25px;
+justfy-content: center;
+display: flex;
+align-items: center;
+    justify-content: center;
+width: 80px;
+}
+
+p::after{
+    content: "";
+    background-color: transparent;
+    height: 0;
+    width: 0;
+    border: solid 15px;
+    border-color: transparent #ff758d transparent transparent;
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    margin-top: -15px;
+}
+
+</style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title></title>
+</head>
+
+<body>
+<p data-person="Osama"><span>T</span>his Is Very Very Long Comment Number One</p>
+<p data-person="Ahmed"><span>T</span>his Is Very Very Long Comment Number Two</p>
+<p data-person="Sayed"><span>T</span>his Is Very Very Long Comment Number Three</p>
+
+</body>
+</html>
